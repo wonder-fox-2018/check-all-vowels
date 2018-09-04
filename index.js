@@ -20,3 +20,4 @@ function checkAllVowels(str){
 
 console.log(checkAllVowels('fransiskus'))
 console.log(checkAllVowels('aaaiiiuuueee'))
+console.log(checkAllVowels('aiueo'))
