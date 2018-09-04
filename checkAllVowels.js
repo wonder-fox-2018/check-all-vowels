@@ -1,31 +1,16 @@
-// function checkAllVowels(str) {
-//     console.time()
-//     var vowels = 'aiueo'
-//     var numOfVowels = 0;
-//     for (let i = 0; i < str.length; i++) {
-//         for (let j = 0; j < vowels.length; j++) {
-//             if(str[i] === vowels[j] || str[i] === vowels[j].toUpperCase()) numOfVowels++
-//         }
-//     }
-//     console.timeEnd()
- 
-//     return numOfVowels === str.length
-// }
-
 function checkAllVowels(str) {
-    console.time()
-    var consonants = 'bcdfghjklmnpqrstvwxyz'
+    var vowels = 'aiueo'
+    var numOfVowels = 0;
     for (let i = 0; i < str.length; i++) {
-        for (let j = 0; j < consonants.length; j++) {
-            if(str[i] === consonants[j] || str[i] === consonants[j].toUpperCase()) {
-                console.timeEnd()
-                return false
-            }
+        for (let j = 0; j < vowels.length; j++) {
+            if(str[i] === vowels[j] || str[i] === vowels[j].toUpperCase()) {
+                numOfVowels++
+            } 
         }
     }
-    console.timeEnd()
-    return true
+    return numOfVowels === str.length
 }
+
 
 // TEST CASES
 console.log(checkAllVowels('AAAAAaaaeiioae'))
