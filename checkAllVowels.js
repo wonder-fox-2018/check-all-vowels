@@ -1,6 +1,5 @@
 
 
-
 function checkAllVowels(str){
     let vowels = 'aiueo'
     let countVowels = 0
